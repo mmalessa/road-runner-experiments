@@ -1,4 +1,25 @@
 {
+    "baldinof/roadrunner-bundle": {
+        "version": "1.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.2",
+            "ref": "47c159c44eb9e6902828da4acbb4199757dd378f"
+        },
+        "files": [
+            "config/packages/baldinof_road_runner.yaml"
+        ]
+    },
+    "dflydev/fig-cookies": {
+        "version": "v2.0.1"
+    },
+    "laminas/laminas-diactoros": {
+        "version": "2.3.1"
+    },
+    "laminas/laminas-zendframework-bridge": {
+        "version": "1.0.4"
+    },
     "php": {
         "version": "7.4"
     },
@@ -11,8 +32,26 @@
     "psr/event-dispatcher": {
         "version": "1.0.0"
     },
+    "psr/http-factory": {
+        "version": "1.0.1"
+    },
+    "psr/http-message": {
+        "version": "1.0.1"
+    },
+    "psr/http-server-handler": {
+        "version": "1.0.1"
+    },
+    "psr/http-server-middleware": {
+        "version": "1.0.1"
+    },
     "psr/log": {
         "version": "1.1.3"
+    },
+    "spiral/goridge": {
+        "version": "v2.4.4"
+    },
+    "spiral/roadrunner": {
+        "version": "v1.8.2"
     },
     "symfony/cache": {
         "version": "v5.1.2"
@@ -110,6 +149,9 @@
     },
     "symfony/polyfill-php80": {
         "version": "v1.18.0"
+    },
+    "symfony/psr-http-message-bridge": {
+        "version": "v2.0.1"
     },
     "symfony/routing": {
         "version": "5.1",

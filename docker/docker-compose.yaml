@@ -12,3 +12,6 @@ services:
             - ./config/application/php-ini-overrides.ini:/usr/local/etc/php/conf.d/99-overrides.ini
         working_dir: /application
         command: ['tail', '-f', '/dev/null']
+        ports:
+            - 8080:8080
+            - 2112:2112
