@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+    application:
+        image: sfgo-application:latest
+        container_name: sfgo-application
+        build:
+            context: base/application
+        restart: always
+        volumes:
+            - ../:/application
+            - ./config/application/.bashrc:/home/developer/.bashrc
+            - ./config/application/php-ini-overrides.ini:/usr/local/etc/php/conf.d/99-overrides.ini
+        working_dir: /application
+        command: ['tail', '-f', '/dev/null']
