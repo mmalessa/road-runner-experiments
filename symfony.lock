@@ -1,4 +1,7 @@
 {
+    "mmalessa/roadrunner-bundle": {
+        "version": "dev-master"
+    },
     "php": {
         "version": "7.4"
     },

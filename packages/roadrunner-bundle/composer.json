@@ -1,0 +1,25 @@
+{
+  "name": "mmalessa/roadrunner-bundle",
+  "type": "symfony-bundle",
+  "description": "Simple library to implement RoadRunner.",
+  "keywords": [
+    "roadrunner"
+  ],
+  "homepage": "https://github.com/mmalessa/roadrunner-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Marcin Malessa",
+      "homepage": "http://github.com/mmalessa"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "symfony/framework-bundle": "5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mmalessa\\RoadRunnerBundle\\": "src/"
+    }
+  }
+}

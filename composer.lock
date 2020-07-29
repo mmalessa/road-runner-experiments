@@ -4,8 +4,44 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6671c1127cdb0c6a359ee2fe0429a363",
+    "content-hash": "cbc3116e706abde568f7b482bc3a2dab",
     "packages": [
+        {
+            "name": "mmalessa/roadrunner-bundle",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./packages/roadrunner-bundle",
+                "reference": "5db299dd319abad6af238ab79e4aa8101d2df135"
+            },
+            "require": {
+                "php": ">=7.4",
+                "symfony/framework-bundle": "5.*"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Mmalessa\\RoadRunnerBundle\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcin Malessa",
+                    "homepage": "http://github.com/mmalessa"
+                }
+            ],
+            "description": "Simple library to implement RoadRunner.",
+            "homepage": "https://github.com/mmalessa/roadrunner-bundle",
+            "keywords": [
+                "roadrunner"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
         {
             "name": "psr/cache",
             "version": "1.0.1",
@@ -2410,8 +2446,10 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "mmalessa/roadrunner-bundle": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
