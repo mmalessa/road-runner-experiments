@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  application:
+    image: testrr-application:latest-dev
+    container_name: testrr-application
+    build:
+      context: dev/config/php
+    restart: always
+    volumes:
+      - ./dev/config/php/.bashrc:/home/developer/.bashrc
+      - ../:/application
+      - ./dev/config/php/php-ini-overrides.ini:/usr/local/etc/php/conf.d/99-overrides.ini
+    command: ['tail', '-f', '/dev/null']
