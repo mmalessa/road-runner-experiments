@@ -1,13 +1,19 @@
 version: "3.7"
 services:
   application:
-    image: testrr-application:latest-dev
-    container_name: testrr-application
+    image: ${APP_IMAGE}
     build:
-      context: dev/config/php
-    restart: always
+        target: dev
+        dockerfile: .docker/Dockerfile
+        context: ..
+        args:
+            DEVELOPER_UID: ${DEVELOPER_UID}
+    container_name: ${CONTAINER_NAME}
+    restart: on-failure
     volumes:
-      - ./dev/config/php/.bashrc:/home/developer/.bashrc
-      - ../:/application
-      - ./dev/config/php/php-ini-overrides.ini:/usr/local/etc/php/conf.d/99-overrides.ini
-    command: ['tail', '-f', '/dev/null']
+      - ../:/app
+      - ./php-ini-overrides.ini:/usr/local/etc/php/conf.d/99-overrides.ini
+    working_dir: /app
+    tty: true
+    ports:
+      - 8181:8181
