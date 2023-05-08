@@ -5,7 +5,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN apt-get update \
     && apt-get install -y git zip unzip
 RUN docker-php-ext-configure pcntl --enable-pcntl \
-    && docker-php-ext-install pcntl
+    && docker-php-ext-install pcntl sockets
 RUN pecl config-set php_ini /usr/local/etc/php/conf.d/over.ini
 
 FROM base AS dev

@@ -1,4 +1,7 @@
 {
+    "baldinof/roadrunner-bundle": {
+        "version": "dev-rr-2023"
+    },
     "mmalessa/roadrunner-bundle": {
         "version": "dev-master"
     },

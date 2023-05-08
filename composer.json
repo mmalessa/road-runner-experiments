@@ -5,14 +5,14 @@
         "php": ">=8.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "symfony/console": "*",
-        "symfony/dotenv": "*",
+        "ext-sockets": "*",
+        "baldinof/roadrunner-bundle": "3.*",
+        "symfony/console": "6.2.*",
+        "symfony/dotenv": "6.2.*",
         "symfony/flex": "^2.2.5",
-        "symfony/framework-bundle": "*",
-        "symfony/runtime": "*",
-        "symfony/yaml": "*"
-    },
-    "require-dev": {
+        "symfony/framework-bundle": "6.2.*",
+        "symfony/runtime": "6.2.*",
+        "symfony/yaml": "6.2.*"
     },
     "config": {
         "allow-plugins": {

@@ -1,3 +1,4 @@
 #!/bin/bash
 
-composer install
+composer install --no-interaction
+/app/vendor/bin/rr get --location bin/

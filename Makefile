@@ -62,6 +62,10 @@ console: ## Enter into application container
 console-root: ## Enter into application container (as root)
 	@docker exec -it -u root $(CONTAINER_NAME) bash
 
+.PHONY: run
+run: up ## Run RR server (dev)
+	@docker exec -u developer $(CONTAINER_NAME) /app/bin/rr serve -c /app/.rr.dev.yaml
+
 .PHONY: tests
 tests: ## Run tests (phpunit)
 	@./vendor/bin/phpunit --testsuite=all
