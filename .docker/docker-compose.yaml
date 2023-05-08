@@ -17,3 +17,4 @@ services:
     tty: true
     ports:
       - 8080:8080
+      - 9180:9180

@@ -28,6 +28,10 @@ logs:
     metrics:
       level: debug
 
+metrics:
+   # prometheus client address (path /metrics added automatically)
+   address: "0.0.0.0:9180"
+
 reload:
   enabled: true
   interval: 1s
