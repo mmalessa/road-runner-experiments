@@ -6,14 +6,14 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "ext-sockets": "*",
-        "baldinof/roadrunner-bundle": "3.*",
-        "sensio/framework-extra-bundle": "^6.2",
-        "symfony/console": "6.2.*",
-        "symfony/dotenv": "6.2.*",
-        "symfony/flex": "^2.2.5",
-        "symfony/framework-bundle": "6.2.*",
-        "symfony/runtime": "6.2.*",
-        "symfony/yaml": "6.2.*"
+        "baldinof/roadrunner-bundle": "3.x-dev",
+        "sensio/framework-extra-bundle": "^6.2.10",
+        "symfony/console": "6.4.x-dev",
+        "symfony/dotenv": "6.4.x-dev",
+        "symfony/flex": "^2.x-dev",
+        "symfony/framework-bundle": "6.4.x-dev",
+        "symfony/runtime": "6.4.x-dev",
+        "symfony/yaml": "6.4.x-dev"
     },
     "config": {
         "allow-plugins": {
@@ -64,7 +64,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "6.2.*"
+            "require": "6.*"
         }
     },
     "minimum-stability": "dev"

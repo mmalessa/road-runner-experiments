@@ -1,14 +1,13 @@
 version: "3.7"
 services:
   application:
-    image: ${APP_IMAGE}
     build:
         target: dev
         dockerfile: .docker/Dockerfile
         context: ..
         args:
-            DEVELOPER_UID: ${DEVELOPER_UID}
-    container_name: ${CONTAINER_NAME}
+            CURRENT_UID: ${CURRENT_UID}
+    container_name: ${COMPOSE_PROJECT_NAME}-application
     restart: on-failure
     volumes:
       - ../:/app
